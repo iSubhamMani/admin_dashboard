@@ -125,6 +125,14 @@ body{
     justify-self: end;
 }
 
+.content > .header > .header-links span{
+    color: var(--default-txt-clr);
+}
+
+.content > .header > .header-links i{
+    color: var(--main-dark);
+}
+
 .content > .main{
     flex: 1;
     padding: 20px 30px 20px 30px;
@@ -294,7 +302,7 @@ body{
     }
 
     .nav-small-screen > h1{
-        font-size: clamp(1.6rem, 5vw, 2rem);
+        font-size: clamp(1.8rem, 5vw, 2rem);
     }
 }
 
