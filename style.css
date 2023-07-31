@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --main-dark: #065f46;
+    --main-light: #22c55e;
+    --bg-clr: #0c1220;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100%;
+    display: flex;
+}
+
+.nav{
+   width: max(18%, 150px);
+   background-color: var(--bg-clr);
+   display: flex;
+   flex-direction: column;
+   color: var(--main-light);
+   align-content: flex-start;
+   padding: 20px 20px 20px 40px;
+}
+
+.nav > h1{
+    font-weight: 800;
+    font-size: 2.6rem;
+}
+
+.nav > menu > li{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.nav > menu > li > span{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav > menu{
+    list-style-type: none;
+    padding: 20px 0 20px 0;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr;
+}
+
+.nav > .menu-first{
+    flex: 1;
+    align-content: start;
+    align-items: center;
+}
+
+.nav > .menu-first > #link-dashboard{
+    background-color: var(--main-dark);
+    border-radius: 8px;
+}
+
+.content{
+    flex: 1;
+}
